@@ -1,0 +1,12 @@
+lst = [True] * 502
+j = 1
+while j < 501:
+    for i in range(1, 502):
+        if i % j == 0:
+            lst[i] = not lst[i]
+    j += 1
+
+
+print(lst[1:].count(False))
+
+
